@@ -1,0 +1,21 @@
+{
+  "name": "Project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lydmgem/Project2.git"
+  },
+  "keywords": [],
+  "author": "Darek Radke, Emily Radke, Lydia Malupa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lydmgem/Project2/issues"
+  },
+  "homepage": "https://github.com/lydmgem/Project2#readme"
+}
