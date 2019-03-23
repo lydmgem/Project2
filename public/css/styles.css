@@ -85,10 +85,17 @@ a:link {
   width: 100%;
 }
 
+/* Main Content */
+.col-sm-8 {
+  float: left;
+  width: 85%;
+}
+
 /* Scoreboard DIV */
 .scoreboard-right {
   float: right;
-  margin-right: 10px;
+  margin-left: 20px;
+  border-left: 1px solid black;
   width: 10%;
 }
 
