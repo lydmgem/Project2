@@ -1,0 +1,122 @@
+/* Header */
+.subnav-hero-section {
+    text-align: center;
+    background: grey;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 300px;
+}
+
+/* Nav Bar */
+a:link {
+  text-decoration: none;
+}
+
+.nav-bar {
+  margin: 20px 0px;
+  background: lightblue;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.menu-hover-lines {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
+}
+
+.menu-hover-lines a {
+  padding: 0.75rem 0;
+  color: rgba(10, 10, 10, 0.5);
+  position: relative;
+  margin-left: 1rem;
+}
+
+.menu-hover-lines a:first-child a {
+  margin-left: 0;
+}
+
+.menu-hover-lines a.active > a {
+  background-color: transparent;
+}
+
+.menu-hover-lines a:before,
+.menu-hover-lines a::after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: #1779ba;
+  width: 0;
+}
+
+.menu-hover-lines a::before {
+  top: 0;
+  left: 0;
+}
+
+.menu-hover-lines a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.menu-hover-lines a:hover,
+.menu-hover-lines a.active > a {
+  color: #0a0a0a;
+  transition: all 0.35s ease;
+}
+
+.menu-hover-lines a:hover::before,
+.menu-hover-lines .active a::before,
+.menu-hover-lines a:hover::after,
+.menu-hover-lines .active a::after {
+  width: 100%;
+}
+
+/* Main Content */
+.col-sm-8 {
+  float: left;
+  width: 85%;
+}
+
+/* Scoreboard DIV */
+.scoreboard-right {
+  float: right;
+  padding-left: 10px;
+  margin-left: 20px;
+  border-left: 1px solid black;
+  width: 10%;
+}
+
+/* Leaderboard */
+section#leaderboard .start{
+    display: block;
+    padding-top: 50%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+}
+
+section#leaderboard .start .high-scores{
+    text-align: left;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .row {
+    width: 100%;
+  }
+}
