@@ -94,6 +94,7 @@ a:link {
 /* Scoreboard DIV */
 .scoreboard-right {
   float: right;
+  padding-left: 10px;
   margin-left: 20px;
   border-left: 1px solid black;
   width: 10%;
