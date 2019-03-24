@@ -1,3 +1,8 @@
+#Darek-info, #Emily-info, #Lydia-info {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
 
 .card-author:hover .card-author-img-wrapper img {
   -webkit-filter: grayscale(0);
