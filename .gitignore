@@ -1,12 +1,4 @@
 .DS_Store
-<<<<<<< HEAD
-node_modules
-=======
 node_modules
 .env
-<<<<<<< HEAD
 config.json
-=======
-config.json
->>>>>>> 30fa4bdd5d2cd468511e456fae39700b1c25f901
->>>>>>> master

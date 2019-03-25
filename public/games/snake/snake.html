@@ -1,16 +1,77 @@
-<html>
-    <head>
-        <title>Snake Game</title>
-        <style>
-            canvas{
-                display: block;
-                margin: 0 auto;
-            }
-        </style>
-    </head>
-    <body>
-    <canvas id="snake" width="608" height="608"></canvas>
-    <script src="snake.js"></script>
-    <button type="button" onClick="window.location.reload();">Play Again!</button>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <header class="subnav-hero-section">
+            <img style="width: 400px" src="../../img/gamejam-logo.png">
+            </header>
+        </div>
+
+        <!-- Nav Bar -->
+        <div class="nav-bar">
+            <div class="menu menu-hover-lines">
+              <a class="active" id="home-link" href="../../index.html">Home</a>
+              <a id="profile-link" href="../../profile.html">Profile</a>
+              <a id="games-link" href="../../games.html">Games</a>
+              <a id="leaderboard-link" href="../../leaderboard.html">Leaderboard</a>
+              <a id="about-us-link" href="../../aboutus.html">About Us</a>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="row">
+            <!-- Game Window -->
+            <div class="main-window" id="ingame-view">
+                <h1 id="instructions" style="margin-top: 0">Instructions:</h1>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perspiciatis eligendi qui temporibus minima repellendus? Deleniti a, voluptates ullam distinctio modi natus harum repudiandae? Est officiis reprehenderit ab possimus tempora.
+                    </li>
+                </ol>
+            
+            <!-- Gamplay Area -->
+                <div class="gameplay-snake">
+                    <canvas id="snake" width="608" height="608"></canvas>
+                    <script src="snake.js"></script>
+                    <button type="button" style="display: block; margin: 0 auto;" onClick="window.location.reload();">Play Again!</button>
+                </div>
+            </div>
+
+            <!-- Scoreboard -->
+            <div class="scoreboard-right">
+                <!-- Snake Leaderboard -->
+                <section id="leaderboard-snake">
+                  <h1>Snake:</h1>
+                  <ol id="gamescore-snake">
+                      <li>20 points - [DAR]</li>
+                      <li>10 points - [LGM]</li>
+                      <li>5 points - [EMI]</li>
+                  </ol>
+                </section>
+
+              <!-- Click Game Leaderboard -->
+                <section id="leaderboard-clicker">
+                  <h1>Clicker:</h1>
+                  <ol id="gamescore-clicker">
+                      <li>30 points - [EMI]</li>
+                      <li>20 points - [DAR]</li>
+                      <li>10 points - [LGM]</li>
+                  </ol>
+                </section>
+            </div>
+        <!-- End of Main div -->
+        </div>
+    <!-- End of 'wrapper' div -->
+    </div>
+</body>
 </html>

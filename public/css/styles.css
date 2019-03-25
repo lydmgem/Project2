@@ -1,7 +1,7 @@
 /* Header */
 .subnav-hero-section {
     text-align: center;
-    background: grey;
+    background: url('../img/classics-bg.jpg');
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -85,32 +85,56 @@ a:link {
   width: 100%;
 }
 
+/* Row Div */
+.row {
+  margin: 0;
+}
+
 /* Main Content */
-.col-sm-8 {
+.main-window {
   float: left;
-  width: 85%;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+/* All Game */
+#game-view {
+  margin: 20px auto;
+}
+
+/* Games */
+img#games-img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* Main Window Titles */
+h1#ingame-view, h1#allgames-title {
+  text-align: center;
+}
+
+/* Canvas */
+canvas#snake {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Scoreboard DIV */
 .scoreboard-right {
   float: right;
-  padding-left: 10px;
-  margin-left: 20px;
+  padding-left: 20px;
   border-left: 1px solid black;
-  width: 10%;
+  width: 15%;
 }
 
 /* Leaderboard */
-section#leaderboard .start{
-    display: block;
-    padding-top: 50%;
-    margin: 0 auto 0 auto;
-    text-align: center;
-    width: 50%;
-    cursor: pointer;
+section#leaderboard-snake, section#leaderboard-clicker{
+  display: block;
+  margin: 0 auto 10 auto;
+  text-align: center;
 }
 
-section#leaderboard .start .high-scores{
+section#leaderboard-snake, section#leaderboard-clicker{
     text-align: left;
 }
 

@@ -24,36 +24,40 @@
               <a class="active" id="home-link" href="./index.html">Home</a>
               <a id="profile-link" href="./profile.html">Profile</a>
               <a id="games-link" href="./games.html">Games</a>
-              <a id="leaderboard-link" href="./leaderboard.html">Leaderboard</a>                
+              <a id="leaderboard-link" href="./leaderboard.html">Leaderboard</a>
               <a id="about-us-link" href="./aboutus.html">About Us</a>
             </div>
         </div>
 
         <!-- Main -->
         <div class="row">
-            <div class="col-sm-8">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia doloremque porro quod aspernatur distinctio doloribus, vitae officia quia eum necessitatibus dolores veniam beatae et, modi eligendi dolorem libero repudiandae?</p>
+            <!-- All-Games -->
+            <div class="main-window" id="game-view">
+                <h1 id="allgames-title">All Games</h1>
+                <div class="all-games">
+                    <a id="games-link" href="../public/games/snake/snake.html"><img id="games-img" src="./img/snake.png" alt="Snake Game"></a>
+                </div>
             </div>
 
             <!-- Scoreboard -->
             <div class="scoreboard-right">
                 <!-- Snake Leaderboard -->
-                <section id="leaderboard">
+                <section id="leaderboard-snake">
                   <h1>Snake:</h1>
-                  <ol id="gamescore-main">
-                      <li>20 - [DAR]</li>
-                      <li>20 - [DAR]</li>
-                      <li>20 - [DAR]</li>
+                  <ol id="gamescore-snake">
+                      <li>20 points - [DAR]</li>
+                      <li>10 points - [LGM]</li>
+                      <li>5 points - [EMI]</li>
                   </ol>
                 </section>
 
               <!-- Click Game Leaderboard -->
-                <section id="leaderboard">
+                <section id="leaderboard-clicker">
                   <h1>Click Game:</h1>
-                  <ol id="gamescore-main">
-                      <li>30 - [EMI]</li>
-                      <li>20 - [DAR]</li>
-                      <li>20 - [DAR]</li>
+                  <ol id="gamescore-clicker">
+                      <li>30 points - [EMI]</li>
+                      <li>20 points - [DAR]</li>
+                      <li>10 points - [LGM]</li>
                   </ol>
                 </section>
             </div>
