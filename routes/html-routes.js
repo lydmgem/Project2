@@ -27,8 +27,13 @@ module.exports = function(app) {
   });
 
   // snake route loads snake game
-
+  app.get("/snake", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/games/snake/snake.html"));
+  });
   // brick route loads brick game
 
   // click route loads click game
+  app.get("/clicker", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/games/clicker/clicker.html"));
+  });
 }
