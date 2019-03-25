@@ -4,10 +4,12 @@ $(document).ready(function() {
   getScores();
 })
 
-function createLeaderboardRow()
+function createLeaderboardRow() {
+  
+}
 
 function getScores(event) {
   $.get("/api/leaderboard", function(data) {
-
+    console.log(data);
   })
 }

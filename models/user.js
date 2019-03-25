@@ -16,10 +16,10 @@ module.exports = function(sequelize, DataTypes) {
     //     len: [1]
     //   }
     // },
-    image: {
-      type: DataTypes.STRING,
-      defaultValue: "https://www.thehindu.com/sci-tech/technology/internet/article17759222.ece/ALTERNATES/FREE_960/02th-egg-person"
-    },
+    // image: {
+    //   type: DataTypes.STRING,
+    //   defaultValue: "https://www.thehindu.com/sci-tech/technology/internet/article17759222.ece/ALTERNATES/FREE_960/02th-egg-person"
+    // },
     snake: {
       type: DataTypes.INTEGER
     }, 
