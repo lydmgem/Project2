@@ -24,7 +24,7 @@ a:link {
 
 .nav-bar {
   margin: 20px 0px;
-  background: lightblue;
+  background: pink;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   line-height: 1.5;
 }
@@ -114,7 +114,7 @@ a:link {
 }
 
 h1#sign-in-welcome {
-  color: green;
+  color: blue;
 }
 
 /* Sign Up */
@@ -148,6 +148,7 @@ form .form-icons .fa {
 
 /* Games */
 img#games-img {
+  float: left;
   width: 200px;
   margin-left: 20px;
 }
