@@ -1,8 +1,11 @@
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
 
+var tag;
+
 $(document).ready(function () {
     $("#restart").hide();
+    $("#subScore").hide();
 });
 
 // create the unit
@@ -137,8 +140,8 @@ function draw(){
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
         clearInterval(game);
         dead.play();
+        $("#subScore").show();
         $("#restart").show();
-        console.log(score)
     }
     
     snake.unshift(newHead);
@@ -152,6 +155,13 @@ function draw(){
 
 let game = setInterval(draw,100);
 
+$("#tagSub").on("click", function(e){
+    e.preventDefault();
+    tag=$("#tag").val().trim();
+    console.log(tag)
+    console.log(score)
+    $("#subScore").hide();
+})
 
 
 

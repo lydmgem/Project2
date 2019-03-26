@@ -3,6 +3,7 @@ let clicks = 0;
 $(document).ready(function () {
     $("#clickUp").hide();
     $("#restart").hide();
+    $("#subScore").hide();
 });
 
 $("#start").click(function () {
@@ -31,7 +32,7 @@ function decrement() {
     $("#secondsLeft").html(timeLeft);
     if (timeLeft === 0) {
         stop();
-
+        $("#subScore").show();
     };
 };
 
@@ -40,3 +41,11 @@ function stop() {
     $("#clickUp").hide()
     $("#restart").show()
 };
+
+$("#tagSub").on("click", function(e){
+    e.preventDefault();
+    tag=$("#tag").val().trim();
+    console.log(tag)
+    console.log(clicks)
+    $("#subScore").hide();
+})
