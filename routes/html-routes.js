@@ -8,27 +8,27 @@ module.exports = function(app) {
 
   // index route loads index.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../pages/index.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // leaderboard route loads leaderboard.html
   app.get("/leaderboard", function(req, res) {
-    res.sendFile(path.join(__dirname, "../pages/leaderboard.html"));
+    res.sendFile(path.join(__dirname, "../public/leaderboard.html"));
   });
 
   // profile route loads profile.html
   app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../pages/profile.html"));
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
   // games route loads games.html
   app.get("/games", function(req, res) {
-    res.sendFile(path.join(__dirname, "../pages/games.html"));
+    res.sendFile(path.join(__dirname, "../public/games.html"));
   });
 
   // snake route loads snake game
   app.get("/snake", function(req, res) {
-    res.sendFile(path.join(__dirname, "./games/snake/snake.html"));
+    res.sendFile(path.join(__dirname, "../public/games/snake/snake.html"));
   });
   // brick route loads brick game
 
