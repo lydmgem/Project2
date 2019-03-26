@@ -1,6 +1,10 @@
 const cvs = document.getElementById("snake");
 const ctx = cvs.getContext("2d");
 
+$(document).ready(function () {
+    $("#restart").hide();
+});
+
 // create the unit
 const box = 32;
 
@@ -133,6 +137,7 @@ function draw(){
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
         clearInterval(game);
         dead.play();
+        $("#restart").show();
         console.log(score)
     }
     
