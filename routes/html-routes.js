@@ -28,7 +28,7 @@ module.exports = function(app) {
 
   // snake route loads snake game
   app.get("/snake", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/games/snake/snake.html"));
+    res.sendFile(path.join(__dirname, "./games/snake/snake.html"));
   });
   // brick route loads brick game
 

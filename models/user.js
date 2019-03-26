@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes) {
     }, 
     click: {
       type: DataTypes.INTEGER
-    },
+    }, 
     brick: {
       type: DataTypes.INTEGER
     }, 
@@ -41,3 +41,4 @@ module.exports = function(sequelize, DataTypes) {
 
   return User;
 }
+ 
