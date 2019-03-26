@@ -90,11 +90,55 @@ a:link {
   margin: 0;
 }
 
+.col-one, .col-two {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.col-two {
+  border-left: 1px solid;
+  width: 45%;
+}
+
 /* Main Content */
 .main-window {
   float: left;
   width: 75%;
   margin-bottom: 20px;
+}
+
+.col-md-12 {
+  text-align: center;
+}
+
+h1#sign-in-welcome {
+  color: green;
+}
+
+/* Sign Up */
+
+form .form-icons {
+  text-align: center;
+}
+
+form .form-icons h4 {
+  margin-bottom: 1rem;
+}
+
+form .form-icons .input-group-label {
+  background-color: #1779ba;
+  border-color: #1779ba;
+}
+
+form .form-icons .input-group-field {
+  border-color: #1779ba;
+}
+
+form .form-icons .fa {
+  color: white;
+  width: 1rem;
 }
 
 /* All Game */
@@ -127,7 +171,7 @@ canvas#snake {
   width: 15%;
 }
 
-/* Leaderboard */
+/* Leaderboard - Sidebar */
 section#leaderboard-snake, section#leaderboard-clicker{
   display: block;
   margin: 0 auto 10 auto;
