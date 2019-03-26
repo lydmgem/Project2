@@ -189,3 +189,21 @@ section#leaderboard-snake, section#leaderboard-clicker{
     width: 100%;
   }
 }
+
+#game{
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  border: 5px outset #1779ba;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-bottom: 20px;
+}
+
+#secondsLeft{
+  font-size: 30px;
+}
+
+#clicks{
+  font-size: 30px;
+}

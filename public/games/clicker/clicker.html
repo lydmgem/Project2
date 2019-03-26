@@ -1,20 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Clicker Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <link rel="stylesheet" href="../../css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <button type="button" id="restart" onClick="window.location.reload();">Play Again!</button>
-    <p>Time Left:<div id="secondsLeft">10</div></p>
-    <div>Clicks:</div>
-    <div id="clicks">0</div>
-    <button type="button" id="clickUp">Click Here!</button>
-    <button type="button" id="start">Start Game!</button>
-    <script src="click.js"></script>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <header class="subnav-hero-section">
+                <img style="width: 400px" src="../../img/gamejam-logo.png">
+            </header>
+        </div>
+
+        <!-- Nav Bar -->
+        <div class="nav-bar">
+            <div class="menu menu-hover-lines">
+                <a class="active" id="home-link" href="../../../pages/index.html">Home</a>
+                <a id="profile-link" href="../../../pages/profile.html">Profile</a>
+                <a id="games-link" href="../../../pages/games.html">Games</a>
+                <a id="leaderboard-link" href="../../../pages/leaderboard.html">Leaderboard</a>
+                <a id="about-us-link" href="../../../pages/aboutus.html">About Us</a>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="row">
+            <!-- Game Window -->
+            <div class="main-window" id="ingame-view">
+                <h1 id="instructions" style="margin-top: 0">Instructions:</h1>
+                <ol>
+                    <li>Click the "Start Game" button and then click the "Click Here!" button as quickly as you can.</li>
+                    <li>Try to click the button as many times as you can before the time runs out.</li>
+                </ol>
+                <div id="game">
+                    <button type="button" id="restart" onClick="window.location.reload();">Play Again!</button>
+                    <p>Time Left:<div id="secondsLeft">10</div>
+                    </p>
+                    <div>Clicks:</div>
+                    <div id="clicks">0</div>
+                    <button type="button" id="clickUp">Click Here!</button>
+                    <button type="button" id="start">Start Game!</button>
+                </div>
+            </div>
+                <!-- Scoreboard -->
+                <div class="scoreboard-right">
+                    <!-- Snake Leaderboard -->
+                    <section id="leaderboard-snake">
+                        <h1>Snake:</h1>
+                        <ol id="gamescore-snake">
+                            <li>20 points - [DAR]</li>
+                            <li>10 points - [LGM]</li>
+                            <li>5 points - [EMI]</li>
+                        </ol>
+                    </section>
+
+                    <!-- Click Game Leaderboard -->
+                    <section id="leaderboard-clicker">
+                        <h1>Clicker:</h1>
+                        <ol id="gamescore-clicker">
+                            <li>30 points - [EMI]</li>
+                            <li>20 points - [DAR]</li>
+                            <li>10 points - [LGM]</li>
+                        </ol>
+                    </section>
+                </div>
+                <!-- End of Main div -->
+            </div>
+            <!-- End of 'wrapper' div -->
+        </div>
+
+        <script src="click.js"></script>
 </body>
+
 </html>
