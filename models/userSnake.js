@@ -1,7 +1,7 @@
 // This file creates  
 
 module.exports = function(sequelize, DataTypes) {
-  var  User = sequelize.define("User", {
+  var  UserSnake = sequelize.define("UserSnake", {
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -9,17 +9,11 @@ module.exports = function(sequelize, DataTypes) {
         len:[1]
       }
     },
-    snake: {
-      type: DataTypes.INTEGER
-    }, 
-    click: {
-      type: DataTypes.INTEGER
-    }, 
-    brick: {
+    score: {
       type: DataTypes.INTEGER
     }
   });
 
-  return User;
+  return UserSnake;
 }
  
