@@ -170,9 +170,8 @@ $("#tagSub").on("click", function(e){
     
     // post score and username (tag) to the database
     // send an AJAX POST-request with jquery
-    $.post("/api/newScore", newScore) 
+    $.post("/api/newSnakeScore", newScore) 
       // on success, run this callback
       .then(function(data) {
-        // console.log(data);
       });
 });
