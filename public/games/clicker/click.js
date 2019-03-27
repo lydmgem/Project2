@@ -48,4 +48,17 @@ $("#tagSub").on("click", function(e){
     console.log(tag)
     console.log(clicks)
     $("#subScore").hide();
-})
+
+    // create newScore variable
+    var newScore = {
+      username: tag,
+      score: clicks
+    }
+
+    // post score and username (tag) to the database
+    // send an AJAX POST-request with jquery
+    $.post("/api/newClickScore", newScore) 
+      // on success, run this callback
+      .then(function(data) {
+      });
+});
