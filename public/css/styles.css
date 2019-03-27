@@ -267,3 +267,12 @@ section#leaderboard-snake, section#leaderboard-clicker{
   display: inline-block;
   font-size: 16px;
 }
+
+#subScore{
+  color: navy;
+  font-size: 25px;
+  border: 5px inset rgb(111, 111, 201);
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 20px;
+}
