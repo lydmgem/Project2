@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Snake Game</title>
+    <meta charset="utf-8" />
+    <title>Breakout Game</title>
     <style>
-        canvas{
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            background: #eee;
             display: block;
             margin: 0 auto;
         }
     </style>
-    <!-- CSS -->
     <link rel="stylesheet" href="../../css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <!-- Header -->
         <div class="header">
             <header class="subnav-hero-section">
-            <img style="width: 400px" src="../../img/gamejam-logo.png">
+                <img style="width: 400px" src="../../img/gamejam-logo.png">
             </header>
         </div>
 
@@ -41,24 +46,27 @@
             <div class="main-window" id="ingame-view">
                 <h1 id="instructions" style="margin-top: 0">Instructions:</h1>
                 <ol>
-                    <li>Press any arrow key to start the game.</li>
-                    <li>Try to eat as many fruits as you can.</li>
-                    <li>The game ends when you run into a wall or your own tail.</li>
+                    <li>Click the "Start Game" button to begin the game.</li>
+                    <li>Use the mouse or left and right arrow keys to move the paddle to bounce the ball against the
+                        bricks.</li>
+                    <li>Break as many bricks as you can before you run out of lives.</li>
                 </ol>
-            <div id="subScore">
+                <div id="subScore">
                     <form>
                         <p>Submit your score to the leaderboards!</p>
                         Gamer Tag:<br>
                         <input type="text" id="tag" name="tag">
                         <br>
                         <input type="submit" id="tagSub" value="Submit">
-                      </form> 
-            </div>
-            <!-- Gamplay Area -->
-                <div class="gameplay-snake">
-                    <canvas id="snake" width="608" height="608"></canvas>
-                    <!-- <script src="./games/snake/snake.js"></script> -->
-                    <button type="button" id="restart" style="display: block; margin: 0 auto;" onClick="window.location.reload();">Play Again!</button>
+                    </form>
+                </div>
+                <!-- Gamplay Area -->
+                <div class="gameplay-break">
+                    <canvas id="myCanvas" width="480" height="320"></canvas>
+                    <div id="buttons">
+                        <button type="button" id="start">Start Game!</button>
+                        <button type="button" id="restart">Restart Game!</button>
+                    </div>
                 </div>
             </div>
 
@@ -66,28 +74,29 @@
             <div class="scoreboard-right">
                 <!-- Snake Leaderboard -->
                 <section id="leaderboard-snake">
-                  <h1>Snake:</h1>
-                  <ol id="gamescore-snake">
-                      <li>20 points - [DAR]</li>
-                      <li>10 points - [LGM]</li>
-                      <li>5 points - [EMI]</li>
-                  </ol>
+                    <h1>Snake:</h1>
+                    <ol id="gamescore-snake">
+                        <li>20 points - [DAR]</li>
+                        <li>10 points - [LGM]</li>
+                        <li>5 points - [EMI]</li>
+                    </ol>
                 </section>
 
-              <!-- Click Game Leaderboard -->
+                <!-- Click Game Leaderboard -->
                 <section id="leaderboard-clicker">
-                  <h1>Clicker:</h1>
-                  <ol id="gamescore-clicker">
-                      <li>30 points - [EMI]</li>
-                      <li>20 points - [DAR]</li>
-                      <li>10 points - [LGM]</li>
-                  </ol>
+                    <h1>Clicker:</h1>
+                    <ol id="gamescore-clicker">
+                        <li>30 points - [EMI]</li>
+                        <li>20 points - [DAR]</li>
+                        <li>10 points - [LGM]</li>
+                    </ol>
                 </section>
             </div>
-        <!-- End of Main div -->
+            <!-- End of Main div -->
         </div>
-    <!-- End of 'wrapper' div -->
+        <!-- End of 'wrapper' div -->
     </div>
-    <script src="./snake.js"></script>
+    <script src="breakout.js"></script>
 </body>
+
 </html>

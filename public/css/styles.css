@@ -232,3 +232,11 @@ section#leaderboard-snake, section#leaderboard-clicker{
 #clicks{
   font-size: 30px;
 }
+
+#subScore{
+  text-align: center;
+}
+
+#buttons{
+  text-align: center;
+}
