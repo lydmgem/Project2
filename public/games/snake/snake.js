@@ -173,6 +173,6 @@ $("#tagSub").on("click", function(e){
     $.post("/api/newScore", newScore) 
       // on success, run this callback
       .then(function(data) {
-        console.log(data);
+        // console.log(data);
       });
 });
