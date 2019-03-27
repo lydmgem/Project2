@@ -6,10 +6,10 @@ $(document).ready(function() {
 
 function createLeaderboardRow() {
   
-}
+};
 
 function getScores(event) {
   $.get("/api/leaderboard", function(data) {
     console.log(data);
   })
-}
+};
