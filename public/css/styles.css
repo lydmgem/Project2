@@ -240,3 +240,55 @@ section#leaderboard-snake, section#leaderboard-clicker{
 #buttons{
   text-align: center;
 }
+
+.scoreButton{
+  background-color: blue;
+  border-color: lightskyblue;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#clickUp{
+  background-color: red;
+  border-color: lightcoral;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#start{
+  background-color: green;
+  border-color: lightGreen;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#restart{
+  background-color: orange;
+  border-color: rgb(255, 201, 102);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
