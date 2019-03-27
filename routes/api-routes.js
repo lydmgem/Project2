@@ -9,6 +9,7 @@ module.exports = function(app) {
 
   app.get("/api/leaderboard", function(req, res) {
     db.UserSnake.findAll({
+      order: [["score", "DESC"]]
     })
       .then(function(dbUser) {
         res.json(dbUser);
@@ -16,7 +17,7 @@ module.exports = function(app) {
       });
   });
 
-  app.post("/api/newScore", function(req, res) {
+  app.post("/api/newSnakeScore", function(req, res) {
     
     var scores = parseInt(req.body.score);
 
@@ -26,6 +27,20 @@ module.exports = function(app) {
 
     }).then(function(results) {
       res.json(results);
+    });
+  });
+
+  app.post("/api/newClickScore", function(req, res) {
+
+    var scores = parseInt(req.body.score);
+
+    db.UserClick.create({
+      username: req.body.username,
+      score: scores
+
+    }).then(function(results) {
+      res.json(results);
+      console.log(results)
     });
   });
 };
