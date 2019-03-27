@@ -1,3 +1,13 @@
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* Header */
 .subnav-hero-section {
     text-align: center;
@@ -23,10 +33,10 @@ a:link {
 }
 
 .nav-bar {
-  margin: 20px 0px;
-  background: pink;
+  margin: 0 auto 20px;
+  background: #360C27;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 2.5;
 }
 
 .menu-hover-lines {
@@ -39,7 +49,7 @@ a:link {
 
 .menu-hover-lines a {
   padding: 0.75rem 0;
-  color: rgba(10, 10, 10, 0.5);
+  color: white;
   position: relative;
   margin-left: 1rem;
 }
@@ -58,7 +68,7 @@ a:link {
   position: absolute;
   content: '';
   transition: all 0.35s ease;
-  background-color: #1779ba;
+  background-color: #f8e36b;
   width: 0;
 }
 
@@ -74,7 +84,7 @@ a:link {
 
 .menu-hover-lines a:hover,
 .menu-hover-lines a.active > a {
-  color: #0a0a0a;
+  color: #7d5552;
   transition: all 0.35s ease;
 }
 
@@ -90,16 +100,30 @@ a:link {
   margin: 0;
 }
 
+.row-leaderboard {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 20px;
+}
+
+.row-leaderboard:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .col-one, .col-two {
+  color: yellow;
   float: left;
-  width: 50%;
+  width: 40%;
   text-align: center;
-  margin: 0 auto 20px auto;
+  margin: 10px;
+  height: 500px;
+  padding-left: 50px;
 }
 
 .col-two {
   border-left: 1px solid;
-  width: 45%;
 }
 
 /* Main Content */
@@ -114,7 +138,8 @@ a:link {
 }
 
 h1#sign-in-welcome {
-  color: blue;
+  color: red;
+  text-align: left;
 }
 
 /* Sign Up */
