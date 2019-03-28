@@ -211,4 +211,17 @@ $("#tagSub").on("click", function(e){
     console.log(tag)
     console.log(score)
     $("#subScore").hide();
+
+    // create newScore variable
+    var newScore = {
+      username: tag,
+      score: score
+    }
+
+    // post score and username (tag) to the database
+    // send an AJAX POST-request with jquery
+    $.post("/api/newBrickScore", newScore) 
+      // on success, run this callback
+      .then(function(data) {
+      });
 })

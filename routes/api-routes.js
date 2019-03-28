@@ -63,4 +63,17 @@ module.exports = function(app) {
       console.log(results)
     });
   });
+
+  app.post("/api/newBrickScore", function(req, res) {
+
+    var scores = parseInt(req.body.score);
+
+    db.UserBrick.create({
+      username: req.body.username,
+      score: scores
+    }).then(function(results) {
+      res.json(results);
+      console.log(results)
+    });
+  });
 };
