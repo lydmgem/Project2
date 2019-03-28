@@ -19,6 +19,7 @@ var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
+var level = 1
 
 var bricks = [];
 for (var c = 0; c < brickColumnCount; c++) {
@@ -70,14 +71,21 @@ function collisionDetection() {
                     dy = -dy;
                     b.status = 0;
                     score++;
-                    if (score == brickRowCount * brickColumnCount) {
-                        dx += 1;
-                        dy -= 1;
+                    if (score == brickRowCount * brickColumnCount || score === 15 * level) {
+                        level++;
                         for (var c = 0; c < brickColumnCount; c++) {
                             bricks[c] = [];
                             for (var r = 0; r < brickRowCount; r++) {
                                 bricks[c][r] = { x: 0, y: 0, status: 1 };
                             }
+                        }
+                        if(level === 2){
+                            dx = 3;
+                            dy = -3;
+                        }
+                        if(level === 3){
+                            dx = 5;
+                            dy = -5;
                         }
                         // draw();
                         // $("#subScore").show();
@@ -145,6 +153,12 @@ function drawWin() {
     ctx.fillText("YOU'VE WON", 100, 160)
 }
 
+function drawLevel() {
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#000000";
+    ctx.fillText("Level: " + level, 100, 20);
+}
+
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBricks();
@@ -152,6 +166,7 @@ function draw() {
     drawPaddle();
     drawScore();
     drawLives();
+    drawLevel();
     collisionDetection();
 
     if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
