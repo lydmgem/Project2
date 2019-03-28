@@ -13,7 +13,7 @@ module.exports = function(app) {
     })
       .then(function(dbUser) {
         res.json(dbUser);
-        console.log(dbUser)
+        
       });
   });
 
@@ -23,7 +23,7 @@ module.exports = function(app) {
     })
       .then(function(dbUser) {
         res.json(dbUser);
-        console.log(dbUser)
+        
       });
   });
 
@@ -33,7 +33,6 @@ module.exports = function(app) {
     })
       .then(function(dbUser) {
         res.json(dbUser);
-        console.log(dbUser)
       });
   });
 
@@ -60,7 +59,6 @@ module.exports = function(app) {
 
     }).then(function(results) {
       res.json(results);
-      console.log(results)
     });
   });
 
@@ -73,7 +71,6 @@ module.exports = function(app) {
       score: scores
     }).then(function(results) {
       res.json(results);
-      console.log(results)
     });
   });
 };
