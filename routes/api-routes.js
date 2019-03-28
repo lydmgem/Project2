@@ -7,8 +7,28 @@ var db = require("../models")
 // ============================================================
 module.exports = function(app) {
 
-  app.get("/api/leaderboard", function(req, res) {
+  app.get("/api/snakeLeaderboard", function(req, res) {
     db.UserSnake.findAll({
+      order: [["score", "DESC"]]
+    })
+      .then(function(dbUser) {
+        res.json(dbUser);
+        console.log(dbUser)
+      });
+  });
+
+  app.get("/api/clickLeaderboard", function(req, res) {
+    db.UserClick.findAll({
+      order: [["score", "DESC"]]
+    })
+      .then(function(dbUser) {
+        res.json(dbUser);
+        console.log(dbUser)
+      });
+  });
+
+  app.get("/api/brickLeaderboard", function(req, res) {
+    db.UserBrick.findAll({
       order: [["score", "DESC"]]
     })
       .then(function(dbUser) {
