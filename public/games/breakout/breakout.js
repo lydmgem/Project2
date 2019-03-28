@@ -71,15 +71,15 @@ function collisionDetection() {
                     b.status = 0;
                     score++;
                     if (score == brickRowCount * brickColumnCount) {
-                        dx = 3;
-                        dy = -3;
+                        dx += 1;
+                        dy -= 1;
                         for (var c = 0; c < brickColumnCount; c++) {
                             bricks[c] = [];
                             for (var r = 0; r < brickRowCount; r++) {
                                 bricks[c][r] = { x: 0, y: 0, status: 1 };
                             }
                         }
-                        draw();
+                        // draw();
                         // $("#subScore").show();
                         // drawWin();
                         // $("#restart").show();
@@ -203,4 +203,12 @@ $("#start").on("click", function(){
 
 $("#restart").on("click", function(){
     document.location.reload();
+})
+
+$("#tagSub").on("click", function(e){
+    e.preventDefault();
+    tag=$("#tag").val().trim();
+    console.log(tag)
+    console.log(score)
+    $("#subScore").hide();
 })
