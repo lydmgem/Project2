@@ -17,7 +17,7 @@ function getSnakeScores(event) {
   
       tableRow.append("<td>" + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
-      tableRow.append("<td>" + data[i].score + "</td>");
+      tableRow.append("<td> - " + data[i].score + "</td>");
 
       $("#snakeLeaderboard").append(tableRow);
     }
@@ -35,7 +35,7 @@ function getClickScores() {
   
       tableRow.append("<td>" + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
-      tableRow.append("<td>" + data[i].score + "</td>");
+      tableRow.append("<td> - " + data[i].score + "</td>");
 
       $("#clickLeaderboard").append(tableRow);
     }
@@ -53,7 +53,7 @@ function getBrickScores() {
   
       tableRow.append("<td>" + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
-      tableRow.append("<td>" + data[i].score + "</td>");
+      tableRow.append("<td> - " + data[i].score + "</td>");
 
       $("#brickLeaderboard").append(tableRow);
     }
