@@ -112,14 +112,13 @@ background: -webkit-linear-gradient(65deg, black, gray);
 }
 
 @media screen and (max-width: 720px) {
-.menu_section {width: 85vw; border-right: 15vw solid white;}
+.menu_section {width: 85vw; border-right: 15vw solid black;}
 }
-.menu_section {font-family: 'Rubik', sans-serif;}
+.menu_section {font-family: 'Open Sans Condensed', sans-serif; }
 
 .branding p {font-size: 50px; text-align: center; line-height: 0px;}
 
 .menu_item {
-	font-family: 'Open Sans Condensed', sans-serif; 
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-bottom: 10px;
@@ -262,6 +261,7 @@ z-index: 150;
 	
 /*THIRD*/
 .third_section {
+	height: 800px;
 	background-position: center;
 	background-image: url(../img/classics-bg.jpg);
 	background-size: cover;
@@ -272,21 +272,22 @@ z-index: 150;
 	display: block;
 	margin: auto;
 }
-	
+
 /*FOURTH*/
 .fourth_section {
-	display: block;
+	background: black;
 	background-position: center;
 	background-image: url(../img/fourth-background.jpg);
-	background-size: 100% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 
 @media screen and (max-width: 1619px) {
-	.gradient_third_section {height: 1247.19px;}
+	.gradient_fourth_section {height: 1247.19px;}
 }
 @media screen and (max-width: 1079px) {
-	.gradient_third_section {height: 1697.19px;}
+	.gradient_fourth_section {height: 1697.19px;}
 }
 
 @media screen and (max-width: 417px) {
@@ -297,9 +298,12 @@ z-index: 150;
 }
 /*FOOTER*/
 .footer_section {
+	background: black;
 	height: 40px;
 }
 .footer_text {
-	margin-top: 30px;
+	background: black;
+	margin-top: 0;
 	text-align: center;
+	color: white;
 }
