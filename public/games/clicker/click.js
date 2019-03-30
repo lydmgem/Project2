@@ -43,7 +43,7 @@ function stop() {
 };
 
 $("#tagSub").on("click", function(e){
-    e.preventDefault();
+    // e.preventDefault();
     tag=$("#tag").val().trim();
     console.log(tag)
     console.log(clicks)

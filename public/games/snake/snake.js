@@ -172,7 +172,7 @@ function draw(){
 let game = setInterval(draw,100);
 
 $("#tagSub").on("click", function(e){
-    e.preventDefault();
+    // e.preventDefault();
     tag=$("#tag").val().trim();
     console.log(tag)
     console.log(score)
