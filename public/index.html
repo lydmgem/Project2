@@ -7,7 +7,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Press+Start+2P|Open+Sans+Condensed:300|Aladin" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <title>GameJam</title>
@@ -16,7 +16,6 @@
     <a href="#top"><img class="arrow_image" src="./img/arrow.svg"></a>
     <a name="top"></a>
     <div id="change_class" class="flex_container section menu_section">
-
         <div class="flex_item menu_item dropdown">
             <p>Menu</p>
             <div class="dropdown-content">
@@ -36,18 +35,19 @@
         <div class="gradient gradient_front gradient_header_section"></div>
         <div class="section_container header_section_container flex_container flex_header_container">
             <div class="text header_text">
-                <h1>Play on!</h1>
+                <h1 class="header_quote">PLAY ON!</h1>
             </div>
             <div class="text body_text flex_item flex_header_item">
             </div>
         </div>
     </div>
 
+    <!-- About Us -->
     <div class="section page second_section">
     <a name="team"></a>
         <div class="section_container second_section_container flex_container flex_center">
-            <div class="text header_text text_grad_purple_yellow">
-                <h1>About Us</h1>
+            <div class="text header_text text_grad_black_green">
+                <h1>ABOUT US</h1>
             </div>
             <a href="https://github.com/DarekR88" target="_blank">
                 <div class="feature flex_feature_item feature1">
@@ -79,53 +79,55 @@
         </div>
     </div>
 
+    <!-- Games -->
     <div class="section page third_section">
     <a name="games"></a>
         <div class="gradient gradient_games gradient_third_section"></div>
         <div class="section_container third_section_container flex_container flex_center">
             <div class="text header_text">
-                <h1>Games</h1>
+                <h1>GAMES</h1>
             </div>
-            <a href="./games/snake/snake.html"><div class="feature offer flex_feature_item offer1">
+            <a href="./games/snake/snake.html"><div class="feature box flex_feature_item offer1">
                 <h2>Snake</h2>
                 <img id="games-images" src="./img/snake.png">
             </div></a>
-            <a href="./games/clicker/clicker.html"><div class="feature offer flex_feature_item offer2">
+            <a href="./games/clicker/clicker.html"><div class="feature box flex_feature_item offer2">
                 <h2>Clicker</h2>
                 <img id="games-images" src="./img/clicker.jpg">
             </div></a>
-            <a href="./games/breakout/break.html"><div class="feature offer flex_feature_item offer3">
+            <a href="./games/breakout/break.html"><div class="feature box flex_feature_item offer3">
                 <h2>Breakout</h2>
                 <img id="games-images" src="./img/brickbreak.png">
             </div></a>
         </div>
     </div>
 
+    <!-- Leaderboard -->
     <div class="section page fourth_section">
-    <a name="leaderboard"></a>
-        <div class="gradient gradient_leaderboard gradient_fourth_section"></div>
+        <a name="leaderboard"></a>
+        <div class="gradient gradient_games gradient_third_section"></div>
         <div class="section_container fourth_section_container flex_container flex_center">
             <div class="text header_text">
-                <h1>Leaderboard</h1>
+                <h1>LEADERBOARD</h1>
             </div>
-            <a href="./games/snake/snake.html"><div class="feature offer flex_feature_item offer1">
+            <div class="feature" id="snakeLeaderboard">
                 <h2>Snake</h2>
                 <ol>
                     <li></li>
                 </ol>
-            </div></a>
-            <a href="./games/clicker/clicker.html"><div class="feature offer flex_feature_item offer2">
+            </div>
+            <div class="feature" id="clickerLeaderboard">
                 <h2>Clicker</h2>
                 <ol>
                     <li></li>
                 </ol>
-            </div></a>
-            <a href="./games/breakout/break.html"><div class="feature offer flex_feature_item offer3">
+            </div>
+            <div class="feature" id="breakoutLeaderboard">
                 <h2>Breakout</h2>
                 <ol>
                     <li></li>
                 </ol>
-            </div></a>
+            </div>
         </div>
     </div>
 
@@ -135,7 +137,6 @@
 
 <!--SCRIPT SECTION-->
 <script src="./js/script.js"></script>
-<script src="./js/games.js"></script>
 <script src="./js/leaderboard.js"></script>
 
 </body>
