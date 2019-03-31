@@ -158,6 +158,7 @@ function draw(){
         dead.play();
         $("#subScore").show();
         $("#restart").show();
+        $("#instructions").hide();
     }
     
     snake.unshift(newHead);

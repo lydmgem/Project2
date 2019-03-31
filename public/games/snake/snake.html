@@ -6,18 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../../../public/css/styles.css">
     <link rel="stylesheet" href="../../../public/css/gameplay.css">
+    <link rel="stylesheet" href="../../../public/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Press+Start+2P|Open+Sans+Condensed:300|Aladin" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Canvas Style -->
-    <style>
-        canvas{
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
 
     <title>Snake</title>
 </head>
@@ -46,13 +38,15 @@
     <div class="wrapper">
         <div class="row">
             <div class="main-window" id="ingame-view">
-                <h1 id="instructions">Instructions:</h1>
+                <h1>Snake</h1>
+                <section id="instructions">
+                <h2>Instructions:</h2>
                     <ol>
                     <li>Press any arrow key to start the game.</li>
                     <li>Try to eat as many fruits as you can.</li>
                     <li>The game ends when you run into a wall or your own tail.</li>
                     </ol>
-
+                </section>
                 <!-- Score Submit -->
                 <div id="subScore">
                     <form>
@@ -67,7 +61,7 @@
                 <!-- Gamplay Area -->
                 <div class="gameplay-snake">
                     <canvas id="snake" width="608" height="608"></canvas>
-                    <button type="button" id="restart" style="display: block inline; margin: 0 auto;" onClick="window.location.reload();">Play Again!</button>
+                    <button type="button" id="restart" style="display: block; margin: 0 40%;" onClick="window.location.reload();">Play Again!</button>
                 </div>
             </div>
 
@@ -75,17 +69,17 @@
             <div class="scoreboard-right">
                 <!-- Snake Leaderboard -->
                 <section id="leaderboard-snake">
-                <h1>Snake:</h1>
+                <h2>Snake:</h2>
                 </section>
 
                 <!-- Click Game Leaderboard -->
                 <section id="leaderboard-clicker">
-                <h1>Clicker:</h1>
+                <h2>Clicker:</h2>
                 </section>
 
                 <!-- Brick Game Leaderboard -->
                 <section id="leaderboard-brickbreak">
-                <h1>Brick Break:</h1>
+                <h2>Brick Break:</h2>
                 </section>
             </div>
         <!-- End of "row" -->
