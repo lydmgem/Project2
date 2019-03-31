@@ -19,17 +19,27 @@ body, html {
 /* Main Window Titles */
 h1#ingame-view {
   text-align: left;
+  margin-bottom: 0px;
 }
 
 .main-window {
   float: left;
-  margin: auto 60px;
+  width: 590px;
+  padding-left: 130px;
+}
+
+section#instructions {
+  color: white;
+  font-size: 15pt;
+  border-radius: 25px;
+  background: rgba(115, 147, 255, 0.26);
+  padding: 10px 5px;
+  margin: 10px 0;
 }
 
 /* Canvas */
 canvas#snake {
   display: block;
-  margin: 0 90px;
 }
 
 /* Scoreboard DIV */
@@ -44,19 +54,17 @@ canvas#snake {
 }
 
 /* Leaderboard - Sidebar */
-section#leaderboard-snake, section#leaderboard-clicker{
+section#leaderboard-snake, section#leaderboard-clicker, section#leaderboard-brickbreak {
   display: block;
   margin: 0 auto 10 auto;
   text-align: left;
 }
 
 #game{
+  background-color: white;
   text-align: center;
-  margin: auto;
   font-size: 20px;
   border: 5px outset #1779ba;
-  margin-left: 400px;
-  margin-right: 400px;
   padding-bottom: 20px;
 }
 
@@ -136,3 +144,8 @@ section#leaderboard-snake, section#leaderboard-clicker{
   margin: 50px;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 720px) {
+  .scoreboard-right {width: 100vw;}
+  .main-window {width: 80vw; margin: 10px;}
+  }

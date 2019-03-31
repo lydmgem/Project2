@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Press+Start+2P|Open+Sans+Condensed:300|Aladin" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Forced Styling -->
+    <style>
+        #leaderboard-snake, #leaderboard-clicker, #leaderboard-brickbreak h2{
+            color: rgb(0, 255, 179);
+        }
+    </style>
+    
     <title>Snake</title>
 </head>
 <body>
@@ -24,7 +31,7 @@
             <div class="dropdown-content">
                 <div class="menu_item menu_item_inside"><a href="../../../public/index.html#top"><p>Home</p></a></div>
                 <div class="menu_item menu_item_inside"><a href="../../../public/index.html#team"><p>About Us</p></a></div>
-                <div class="menu_item menu_item_inside"><a href="../../../public/index.html#games"></a><p>Games</p></a></div>
+                <div class="menu_item menu_item_inside"><a href="../../../public/index.html#games"><p>Games</p></a></div>
                 <div class="menu_item menu_item_inside"><a href="../../../public/index.html#leaderboard"><p>Leaderboard</p></a></div>
             </div>
         </div>
@@ -58,10 +65,15 @@
                     </form> 
                 </div>
 
+                <!-- Modal **STILL GOING TO TEST THIS OUT, NOT FINISHED JUST YET! -->
+                <!-- <div id="endgame-modal" hidden>
+
+                </div> -->
+
                 <!-- Gamplay Area -->
                 <div class="gameplay-snake">
                     <canvas id="snake" width="608" height="608"></canvas>
-                    <button type="button" id="restart" style="display: block; margin: 0 40%;" onClick="window.location.reload();">Play Again!</button>
+                    <button type="button" id="restart" style="display: inline-block; margin-left: 40%;" onClick="window.location.reload();">Play Again!</button>
                 </div>
             </div>
 
