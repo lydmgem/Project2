@@ -1,0 +1,138 @@
+body, html {
+  background: url(../img/classics-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  color: green;
+  margin: 50px 0 0 0;
+  height: 100%;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Main Window Titles */
+h1#ingame-view {
+  text-align: left;
+}
+
+.main-window {
+  float: left;
+  margin: auto 60px;
+}
+
+/* Canvas */
+canvas#snake {
+  display: block;
+  margin: 0 90px;
+}
+
+/* Scoreboard DIV */
+.scoreboard-right {
+  float: right;
+  background-color: white;
+  opacity: 0.4;
+  padding-left: 5px;
+  border-left: 1px solid navy;
+  width: 30%;
+  height: 1000px;
+}
+
+/* Leaderboard - Sidebar */
+section#leaderboard-snake, section#leaderboard-clicker{
+  display: block;
+  margin: 0 auto 10 auto;
+  text-align: left;
+}
+
+#game{
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  border: 5px outset #1779ba;
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-bottom: 20px;
+}
+
+#secondsLeft{
+  font-size: 30px;
+}
+
+#clicks{
+  font-size: 30px;
+}
+
+#subScore{
+  background-color: white;
+  text-align: center;
+}
+
+#buttons{
+  text-align: center;
+}
+
+.scoreButton{
+  background-color: blue;
+  border-color: lightskyblue;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#clickUp{
+  background-color: red;
+  border-color: lightcoral;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#start{
+  background-color: green;
+  border-color: lightGreen;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#restart{
+  background-color: orange;
+  border-color: rgb(255, 201, 102);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#subScore{
+  color: navy;
+  font-size: 25px;
+  border: 5px inset rgb(111, 111, 201);
+  margin: 50px;
+  margin-bottom: 20px;
+}
