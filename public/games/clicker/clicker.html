@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Clicker Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../public/css/gameplay.css">
+    <link rel="stylesheet" href="../../../public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Press+Start+2P|Open+Sans+Condensed:300|Aladin" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Forced Styling -->
+    <style>
+        #leaderboard-snake, #leaderboard-clicker, #leaderboard-brickbreak h2{
+            color: rgb(0, 255, 179);
+        }
+    </style>
+    
+    <title>Clicker</title>
 </head>
-
 <body>
-    <div class="wrapper">
-        <!-- Header -->
-        <div class="header">
-            <header class="subnav-hero-section">
-                <img style="width: 400px" src="../../img/gamejam-logo.png">
-            </header>
-        </div>
+    <!-- Nav -->
+    <a href="#top"><img class="arrow_image" src="../../../public/img/arrow.svg"></a>
+    <a name="top"></a>
+    <div id="change_class" class="flex_container section menu_section">
 
-        <!-- Nav Bar -->
-        <div class="nav-bar">
-            <div class="menu menu-hover-lines">
-                <a class="active" id="home-link" href="../../index.html">Home</a>
-                <a id="profile-link" href="../../profile.html">Profile</a>
-                <a id="games-link" href="../../games.html">Games</a>
-                <a id="leaderboard-link" href="../../leaderboard.html">Leaderboard</a>
-                <a id="about-us-link" href="../../aboutus.html">About Us</a>
+        <div class="flex_item menu_item dropdown">
+            <p>Menu</p>
+            <div class="dropdown-content">
+                <div class="menu_item menu_item_inside"><a href="../../../public/index.html#top"><p>Home</p></a></div>
+                <div class="menu_item menu_item_inside"><a href="../../../public/index.html#team"><p>About Us</p></a></div>
+                <div class="menu_item menu_item_inside"><a href="../../../public/index.html#games"><p>Games</p></a></div>
+                <div class="menu_item menu_item_inside"><a href="../../../public/index.html#leaderboard"><p>Leaderboard</p></a></div>
             </div>
         </div>
+        <div class="flex_item menu_item menu_item_outside"><a href="../../../public/index.html#top"><p>Home</p></a></div>
+        <div class="flex_item menu_item menu_item_outside"><a href="../../../public/index.html#team"><p>About Us</p></a></div>
+        <div class="flex_item menu_item menu_item_outside"><a href="../../../public/index.html#games"><p>Games</p></a></div></a>
+        <div class="flex_item menu_item menu_item_outside"><a href="../../../public/index.html#leaderboard"><p>Leaderboard</p></a></div></a>
+    </div>
 
-        <!-- Main -->
+    <!-- Game Section -->
+    <div class="wrapper">
         <div class="row">
-            <!-- Game Window -->
             <div class="main-window" id="ingame-view">
-                <h1 id="instructions" style="margin-top: 0">Instructions:</h1>
-                <ol>
+                <h1>Clicker</h1>
+                <section id="instructions">
+                <h2>Instructions:</h2>
+                    <ol>
                     <li>Click the "Start Game" button and then click the "Click Here!" button as quickly as you can.</li>
                     <li>Try to click the button as many times as you can before the time runs out.</li>
-                </ol>
+                    </ol>
+                </section>
+                <!-- Score Submit -->
                 <div id="subScore">
-                        <form>
-                            <p>Submit your score to the leaderboards!</p>
-                            Gamer Tag:<br>
-                            <input type="text" id="tag" name="tag">
-                            <br>
-                            <input type="submit" class="scoreButton" id="tagSub" value="Submit">
-                          </form> 
+                    <form>
+                    <p>Submit your score to the leaderboards!</p>
+                    Gamer Tag:<br>
+                    <input type="text" id="tag" name="tag">
+                    <br>
+                    <input type="submit" class="scoreButton" id="tagSub" value="Submit">
+                    </form> 
                 </div>
+
+                <!-- Gamplay Area -->
                 <div id="game">
                     <button type="button" id="restart" onClick="window.location.reload();">Play Again!</button>
                     <p>Time Left:<div id="secondsLeft">10</div>
@@ -59,33 +76,36 @@
                 </div>
             </div>
 
-            <!-- Scoreboard -->
+        <!-- Scoreboard -->
             <div class="scoreboard-right">
-              <!-- Snake Leaderboard -->
-              <section id="leaderboard-snake">
-                  <h1>Snake:</h1>
-                  
-              </section>
+                <!-- Snake Leaderboard -->
+                <section id="leaderboard-snake">
+                <h2>Snake:</h2>
+                </section>
 
-              <!-- Click Game Leaderboard -->
-              <section id="leaderboard-clicker">
-                  <h1>Clicker:</h1>
-                  
-              </section>
+                <!-- Click Game Leaderboard -->
+                <section id="leaderboard-clicker">
+                <h2>Clicker:</h2>
+                </section>
 
-              <!-- Brick Game Leaderboard -->
-              <section id="leaderboard-brickbreak">
-                <h1>Brick Break:</h1>
-                
-              </section>
+                <!-- Brick Game Leaderboard -->
+                <section id="leaderboard-brickbreak">
+                <h2>Brick Break:</h2>
+                </section>
             </div>
-            
-                <!-- End of Main div -->
-            </div>
-            <!-- End of 'wrapper' div -->
+        <!-- End of "row" -->
         </div>
+    <!-- End of "wrapper" -->
+    </div>
 
-        <script src="click.js"></script>
+<!-- Footer -->
+<div class="section footer_section">
+    <a href="https://github.com/lydmgem/Project2"><p class="footer_text">GameJam&trade; 2019 &copy;</p></a>
+</div>
+
+<!-- SCRIPTS -->
+<script src="../clicker/click.js"></script>
+<script src="../../../public/js/script.js"></script>
+
 </body>
-
 </html>
