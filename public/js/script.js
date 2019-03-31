@@ -1,5 +1,3 @@
-//3 Scripts: SMOOTH SCROLL, CHANGE CLASS
-
 //SMOOTH SCROLLING
 // Select all links with hashes
 $('a[href*="#"]')
@@ -47,4 +45,4 @@ $('a[href*="#"]')
 	   } else {
 	   		swap_class.classList.add("menu_color_change");
 	   	}
-	});
+  });
