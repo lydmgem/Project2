@@ -46,3 +46,18 @@ $('a[href*="#"]')
 	   		swap_class.classList.add("menu_color_change");
 	   	}
   });
+
+  anime ({
+    targets: ['.header_quote'],
+    rotate: 360,
+    duration: 5000,
+    translateX: [
+      {value: 200, duration: 1500},
+      {value: 0, duration: 1500}
+    ],
+    autoplay: true,
+    elasticity: 650,
+    delay: 500,
+    easing: 'easeOutElastic',
+    loop: true
+  });
