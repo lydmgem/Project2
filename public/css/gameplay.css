@@ -44,6 +44,7 @@ canvas#snake {
 
 /* Scoreboard DIV */
 .scoreboard-right {
+  text-align: center;
   float: right;
   background-color: white;
   opacity: 0.4;
@@ -55,11 +56,11 @@ canvas#snake {
 
 /* Leaderboard - Sidebar */
 section#leaderboard-snake, section#leaderboard-clicker, section#leaderboard-brickbreak {
+  text-align: center;
   font-size: 15pt;
   font-weight: bold;
   display: block;
   margin: 0 auto 10 auto;
-  text-align: center;
 }
 
 #game{

@@ -33,7 +33,7 @@ function getClickScores() {
   
       var tableRow = $("<tr>");
   
-      tableRow.append("<td> " + rank + ". " + "</td>");
+      tableRow.append("<td>" + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
       tableRow.append("<td> - " + data[i].score + "</td>");
 
