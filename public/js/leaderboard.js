@@ -28,6 +28,7 @@ function getClickScores() {
   $.get("/api/clickLeaderboard", function(data) {
     
   }).then(function(data) {
+    console.log(data)
     for(var i = 0; i < 5; i++) {
       var rank = i + 1;
   
