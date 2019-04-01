@@ -11,19 +11,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // leaderboard route loads leaderboard.html
-  app.get("/leaderboard", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/leaderboard.html"));
-  });
-
-  // profile route loads profile.html
-  app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile.html"));
-  });
-
-  // games route loads games.html
-  app.get("/games", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/games.html"));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // snake route loads snake game
@@ -31,7 +20,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/games/snake/snake.html"));
   });
   // brick route loads brick game
-
+  app.get("/breakout", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/games/breakout/break.html"));
+  });
   // click route loads click game
   app.get("/clicker", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/games/clicker/clicker.html"));
