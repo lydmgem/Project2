@@ -52,7 +52,7 @@ $('a[href*="#"]')
     rotate: 360,
     duration: 5000,
     translateX: [
-      {value: 300, duration: 1500},
+      {value: 200, duration: 1500},
       {value: 0, duration: 1500}
     ],
     autoplay: true,
