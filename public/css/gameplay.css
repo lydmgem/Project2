@@ -5,7 +5,7 @@ body, html {
 }
 
 .wrapper {
-  color: green;
+  color: navy;
   margin: 50px 0 0 0;
   height: 100%;
 }
@@ -55,9 +55,11 @@ canvas#snake {
 
 /* Leaderboard - Sidebar */
 section#leaderboard-snake, section#leaderboard-clicker, section#leaderboard-brickbreak {
+  font-size: 15pt;
+  font-weight: bold;
   display: block;
   margin: 0 auto 10 auto;
-  text-align: left;
+  text-align: center;
 }
 
 #game{
