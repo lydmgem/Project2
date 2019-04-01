@@ -15,7 +15,7 @@ function getSnakeScores(event) {
   
       var tableRow = $("<tr>");
   
-      tableRow.append("<td>" + rank + ". " + "</td>");
+      tableRow.append("<td> " + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
       tableRow.append("<td> - " + data[i].score + "</td>");
 
@@ -33,7 +33,7 @@ function getClickScores() {
   
       var tableRow = $("<tr>");
   
-      tableRow.append("<td>" + rank + ". " + "</td>");
+      tableRow.append("<td> " + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
       tableRow.append("<td> - " + data[i].score + "</td>");
 
@@ -51,7 +51,7 @@ function getBrickScores() {
   
       var tableRow = $("<tr>");
   
-      tableRow.append("<td>" + rank + ". " + "</td>");
+      tableRow.append("<td> " + rank + ". " + "</td>");
       tableRow.append("<td>" + data[i].username + "</td>");
       tableRow.append("<td> - " + data[i].score + "</td>");
 
