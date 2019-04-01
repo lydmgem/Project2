@@ -201,7 +201,7 @@ z-index: 150;
 .header_section {
 	background-color: black;
 	background-position: center;
-	background-image: url(../img/gamejam-logo.png);
+	background-image: url(../img/gamejam-logo.png), url(../img/static.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
