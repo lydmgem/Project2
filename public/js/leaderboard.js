@@ -36,6 +36,8 @@ function getClickScores() {
       tableRow.append("<td>" + rank + ". " + " </td>");
       tableRow.append("<td>" + data[i].username + " </td>");
       tableRow.append("<td> - " + data[i].score + "</td>");
+
+      $("#clickLeaderboard").append(tableRow);
     }
   });
 };
